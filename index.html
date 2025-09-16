@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blox Bux</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="menu">
+  <h2>Blox Bux</h2>
+  <div class="profile">
+    <span id="user-email">Carregando...</span>
+    <button id="logout">Sair</button>
+  </div>
+  <button id="admin-btn">Painel Admin</button>
+</div>
+
+<div class="main">
+  <div id="admin-panel" class="hidden">
+    <input type="text" id="prod-name" placeholder="Nome do produto">
+    <input type="text" id="prod-desc" placeholder="Descrição">
+    <input type="number" id="prod-price" placeholder="Preço">
+    <input type="text" id="prod-img" placeholder="Imagem (URL)">
+    <button id="add-prod">Adicionar Produto</button>
+  </div>
+
+  <div id="productList" class="product-list"></div>
+</div>
+
+<script type="module" src="app.js"></script>
+<script type="module" src="login.js"></script>
+</body>
+</html>
